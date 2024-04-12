@@ -86,7 +86,7 @@ function setBoardState(boardArray) {
 }
 
 function randomBoardState() {
-    return generateBoardState(function() {
+    return generateBoardState(function(row, col) {
         return Math.random() < 0.01;
     }); 
 }
