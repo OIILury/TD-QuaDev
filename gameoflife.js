@@ -87,7 +87,7 @@ function setBoardState(boardArray) {
 }
 
 function randomBoardState() {
-    return generateBoardState(function() {
+    return generateBoardState(function(row,col) {
         return Math.random() < RANDOM_ALIVE_PROBABILITY;
     }); 
 }
