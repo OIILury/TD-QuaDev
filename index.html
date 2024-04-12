@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="gameoflife.css">
+</head>
+<body onload="initializeBoard('boardSvg')">
+    <div id="controls">
+        <button onclick="randomizeBoard()">
+            Al&eacute;atoire
+        </button>
+        <button onclick="toggleLauncher(this)">
+            Lancer
+        </button>
+    </div>
+    <svg id="boardSvg" height="600" width="1000"></svg>
+    <script src="gameoflife.js"></script>
+</body>
+</html>

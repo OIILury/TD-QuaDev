@@ -1,0 +1,24 @@
+body {
+    padding: 20px;
+    background-color: #444;
+}
+
+#controls {
+    clear: both;
+    margin: 20px 40px;
+}
+
+#controls button {
+    width: 440px;
+    font-size: 1.5em;
+    margin: auto;
+}
+
+svg rect {
+    stroke: white;
+    fill: #C5D6D6;
+}
+
+svg rect.alive {
+    fill: black;
+}
