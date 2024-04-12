@@ -1,6 +1,7 @@
 const ROWS = 60;
 const COLS = 100;
 const TICK_DURATION = 50;
+const RANDOM_ALIVE_PROBABILITY = 0.1;
 
 var Board = null;
 var BoardTick = null;
@@ -86,8 +87,8 @@ function setBoardState(boardArray) {
 }
 
 function randomBoardState() {
-    return generateBoardState(function(row, col) {
-        return Math.random() < 0.01;
+    return generateBoardState(function() {
+        return Math.random() < RANDOM_ALIVE_PROBABILITY;
     }); 
 }
 
