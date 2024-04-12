@@ -88,7 +88,7 @@ function setBoardState(boardArray) {
 function randomBoardState() {
     return generateBoardState(function() {
         return Math.random() < 0.01;
-    });
+    }); 
 }
 
 function tick() {
